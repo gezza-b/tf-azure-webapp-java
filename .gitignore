@@ -1,0 +1,6 @@
+# .tfvars files
+*.tfvars
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
