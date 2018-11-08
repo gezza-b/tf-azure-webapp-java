@@ -4,3 +4,10 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+
+# plugins
+**/lock.json
+**/*.exe
+
+# others
+**/*.bak

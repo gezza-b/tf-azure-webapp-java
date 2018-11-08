@@ -30,6 +30,10 @@ resource "azurerm_app_service" "webapp" {
   location            = "${azurerm_resource_group.webapp.location}"
   resource_group_name = "${azurerm_resource_group.webapp.name}"
   app_service_plan_id = "${azurerm_app_service_plan.webserviceplan.id}"
-  site_config         = "${var.site_config}"
+  site_config         = {
+    java_container = "TOMCAT"
+    java_container_version = "8.5"
+    java_version = "1.8"
+  }
   app_settings        = "${var.app_settings}"
 }
