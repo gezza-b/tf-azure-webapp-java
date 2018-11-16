@@ -11,3 +11,5 @@
 
 # others
 **/*.bak
+.vscode
+bin/**
