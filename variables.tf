@@ -18,7 +18,7 @@ variable "plan_settings" {
   description = "Definition of the dedicated plan to use"
 
   default = {
-    kind     = "Linux" # Linux or Windows
+    kind     = "Windows" # Does only exist on Windows in Australia
     size     = "S1"
     capacity = 1
     tier     = "Standard"
